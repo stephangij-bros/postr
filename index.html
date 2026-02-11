@@ -3,55 +3,325 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>POSTR™ – LED Poster Display Rentals</title>
+  <title>POSTRPRO — Premium LED Poster Display Rentals</title>
+  <meta name="description" content="Premium LED poster display rentals for Events, Trade Shows, and Promotions. Fast setup. Clean footprint. Indoor & outdoor ready. Toronto & Montreal." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="bg-orbs" aria-hidden="true"></div>
 
-<header class="header">
-  <div class="wrap">
-    <div class="brand">POSTR<span class="tm">™</span></div>
-    <h1>LED Poster Display Rentals</h1>
-    <p class="sub">
-      Premium LED displays for <strong>Events</strong>, <strong>Trade Shows</strong>, and <strong>Promotions</strong>.
-      Fast setup. Clean footprint. Indoor & outdoor ready.
-    </p>
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <a class="brand" href="#top" aria-label="POSTRPRO home">
+        <span class="brand__mark">POSTR</span><span class="brand__pro">PRO</span>
+      </a>
 
-    <div class="cta-row">
-      <a class="btn" href="mailto:info@postrpro.ca">Email us</a>
-      <a class="btn btn-ghost" href="tel:+14387874737">Call 438-787-4737</a>
+      <nav class="nav">
+        <a href="#use-cases">Use cases</a>
+        <a href="#features">Features</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="topbar__cta">
+        <a class="btn btn--ghost" href="tel:+15142447729">Call</a>
+        <a class="btn btn--primary" href="#contact">Get a quote</a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
 
-    <div class="contact">
-      <div>📞 438-787-4737 | 514-244-7729</div>
-      <div>📧 <a href="mailto:info@postrpro.ca">info@postrpro.ca</a></div>
-      <div>📍 Available in Toronto & Montreal</div>
+    <div class="mobile-nav" id="mobileNav" hidden>
+      <a href="#use-cases">Use cases</a>
+      <a href="#features">Features</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn--primary" href="#contact">Get a quote</a>
+      <a class="btn btn--ghost" href="tel:+15142447729">Call 514‑244‑7729</a>
+      <a class="btn btn--ghost" target="_blank" rel="noopener" href="https://wa.me/15142447729?text=Hi%20POSTRPRO%2C%20I%27d%20like%20a%20quote%20for%20an%20LED%20poster%20rental.">WhatsApp</a>
     </div>
-  </div>
-</header>
+  </header>
 
-<section class="section">
-  <div class="wrap grid">
-    <div class="card">
-      <h2>High-impact presence</h2>
-      <p>Turn any booth, lobby, or activation into an attention magnet—without bulky setups.</p>
-    </div>
-    <div class="card">
-      <h2>Fast setup</h2>
-      <p>Roll in, power up, and go. Perfect for quick changeovers and busy venues.</p>
-    </div>
-    <div class="card">
-      <h2>Indoor & outdoor ready</h2>
-      <p>Designed to perform in real event conditions—bright, clean, and reliable.</p>
-    </div>
-  </div>
-</section>
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__copy reveal">
+          <div class="pill">EVENTS • TRADE SHOWS • PROMOTIONS</div>
+          <h1 class="hero__title">
+            Premium LED Posters that make your booth <span class="accent">impossible to miss</span>.
+          </h1>
+          <p class="hero__sub">
+            Clean footprint. Fast setup. Pro presence. Indoor & outdoor ready.
+            <span class="muted">Available in Toronto & Montreal.</span>
+          </p>
 
-<footer class="footer">
-  <div class="wrap">
-    <div>POSTR™ — A Raelkon company</div>
-  </div>
-</footer>
+          <div class="hero__buttons">
+            <a class="btn btn--primary" href="#contact">Request a quote</a>
+            <a class="btn btn--ghost" target="_blank" rel="noopener"
+               href="https://wa.me/15142447729?text=Hi%20POSTRPRO%2C%20I%27d%20like%20a%20quote%20for%20an%20LED%20poster%20rental.">WhatsApp</a>
+            <a class="btn btn--ghost" href="mailto:info@postrpro.ca">Email</a>
+          </div>
 
+          <div class="hero__meta">
+            <div class="meta">
+              <div class="meta__k">Call</div>
+              <div class="meta__v">438‑787‑4737 • 514‑244‑7729</div>
+            </div>
+            <div class="meta">
+              <div class="meta__k">Email</div>
+              <div class="meta__v">info@postrpro.ca</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Animated mockup -->
+        <div class="hero__mock reveal" aria-label="Animated LED poster mockup">
+          <div class="mock">
+            <div class="mock__screen">
+              <div class="map-ui" aria-hidden="true">
+                <div class="map-ui__grid"></div>
+                <div class="map-ui__paths"></div>
+                <div class="map-ui__pins"></div>
+                <div class="map-ui__glow"></div>
+              </div>
+            </div>
+            <div class="mock__wheels" aria-hidden="true">
+              <span class="wheel"></span><span class="wheel"></span>
+            </div>
+          </div>
+          <div class="mock__caption">
+            Full‑LED surface down to the wheel base • ultra‑thin • high‑impact
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__fade" aria-hidden="true"></div>
+    </section>
+
+    <!-- STRIP -->
+    <section class="strip">
+      <div class="wrap strip__inner">
+        <div class="strip__item">Wayfinding</div>
+        <div class="dot"></div>
+        <div class="strip__item">Brand activations</div>
+        <div class="dot"></div>
+        <div class="strip__item">Product launches</div>
+        <div class="dot"></div>
+        <div class="strip__item">Auto shows</div>
+        <div class="dot"></div>
+        <div class="strip__item">Retail pop‑ups</div>
+      </div>
+    </section>
+
+    <!-- USE CASES -->
+    <section id="use-cases" class="section">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <h2>Built for crowded venues</h2>
+          <p class="muted">Designed to stand out without taking over your floor plan.</p>
+        </div>
+
+        <div class="tiles">
+          <article class="tile reveal">
+            <h3>Exhibition booths</h3>
+            <p>Stop traffic, showcase your offer, and guide visitors in seconds.</p>
+          </article>
+          <article class="tile reveal">
+            <h3>Conferences</h3>
+            <p>Schedules, maps, speaker highlights—easy to update, easy to read.</p>
+          </article>
+          <article class="tile reveal">
+            <h3>Retail activations</h3>
+            <p>Promotions that look premium, not “temporary”.</p>
+          </article>
+          <article class="tile reveal">
+            <h3>VIP & corporate</h3>
+            <p>Clean branding for lobbies, receptions, and internal events.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="section section--alt">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <h2>Premium by design</h2>
+          <p class="muted">A simple setup that looks like a high‑end installation.</p>
+        </div>
+
+        <div class="features">
+          <div class="feature reveal">
+            <div class="icon">⚡</div>
+            <div>
+              <h3>Fast setup</h3>
+              <p>Roll in, plug in, play. Perfect for tight changeovers.</p>
+            </div>
+          </div>
+          <div class="feature reveal">
+            <div class="icon">🧼</div>
+            <div>
+              <h3>Clean footprint</h3>
+              <p>High impact without bulky truss or giant screens.</p>
+            </div>
+          </div>
+          <div class="feature reveal">
+            <div class="icon">🌦️</div>
+            <div>
+              <h3>Indoor & outdoor ready</h3>
+              <p>Reliable performance for real event conditions.</p>
+            </div>
+          </div>
+          <div class="feature reveal">
+            <div class="icon">🎯</div>
+            <div>
+              <h3>Content that converts</h3>
+              <p>Maps, promos, schedules, motion graphics—made to be noticed.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cta-card reveal">
+          <div>
+            <h3>Need a quick quote?</h3>
+            <p class="muted">Tell us your event date + location. We reply fast.</p>
+          </div>
+          <div class="cta-card__buttons">
+            <a class="btn btn--primary" href="#contact">Request a quote</a>
+            <a class="btn btn--ghost" target="_blank" rel="noopener"
+               href="https://wa.me/15142447729?text=Hi%20POSTRPRO%2C%20my%20event%20date%20is%20____%20and%20location%20is%20____.%20Can%20I%20get%20a%20quote%3F">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <h2>Look & feel</h2>
+          <p class="muted">Replace these placeholders with your real photos (drag & drop into /assets).</p>
+        </div>
+
+        <div class="gallery">
+          <figure class="shot reveal">
+            <img src="assets/hero-bg.svg" alt="Abstract premium background" loading="lazy">
+            <figcaption>Premium visuals</figcaption>
+          </figure>
+          <figure class="shot reveal">
+            <img src="assets/hero-bg.svg" alt="Abstract premium background" loading="lazy">
+            <figcaption>Trade show presence</figcaption>
+          </figure>
+          <figure class="shot reveal">
+            <img src="assets/hero-bg.svg" alt="Abstract premium background" loading="lazy">
+            <figcaption>Wayfinding & info</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section--alt">
+      <div class="wrap contact">
+        <div class="contact__left reveal">
+          <h2>Contact</h2>
+          <p class="muted">
+            Send details and we’ll reply with availability + pricing.
+          </p>
+
+          <div class="contact__cards">
+            <a class="contact-card" href="tel:+14387874737">
+              <div class="contact-card__k">Phone</div>
+              <div class="contact-card__v">438‑787‑4737</div>
+            </a>
+            <a class="contact-card" href="tel:+15142447729">
+              <div class="contact-card__k">Phone</div>
+              <div class="contact-card__v">514‑244‑7729</div>
+            </a>
+            <a class="contact-card" href="mailto:info@postrpro.ca">
+              <div class="contact-card__k">Email</div>
+              <div class="contact-card__v">info@postrpro.ca</div>
+            </a>
+            <a class="contact-card" target="_blank" rel="noopener"
+               href="https://wa.me/15142447729?text=Hi%20POSTRPRO%2C%20I%27d%20like%20a%20quote%20for%20an%20LED%20poster%20rental.">
+              <div class="contact-card__k">WhatsApp</div>
+              <div class="contact-card__v">Chat now</div>
+            </a>
+          </div>
+
+          <p class="tiny muted">
+            Tip: This page can be duplicated into French later for Quebec clients (FR/EN toggle).
+          </p>
+        </div>
+
+        <form class="form reveal" id="quoteForm"
+              action="https://formsubmit.co/info@postrpro.ca" method="POST">
+          <input type="hidden" name="_subject" value="POSTRPRO Quote Request" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+
+          <div class="form__row">
+            <label>
+              Name
+              <input name="name" autocomplete="name" required placeholder="Your name" />
+            </label>
+            <label>
+              Email
+              <input name="email" type="email" autocomplete="email" required placeholder="you@company.com" />
+            </label>
+          </div>
+
+          <div class="form__row">
+            <label>
+              Company / Booth
+              <input name="company" placeholder="Company name (optional)" />
+            </label>
+            <label>
+              Event date
+              <input name="date" type="date" />
+            </label>
+          </div>
+
+          <label>
+            Message
+            <textarea name="message" required placeholder="Where is your event? How many days? Indoor/outdoor? Any content needs?"></textarea>
+          </label>
+
+          <div class="form__actions">
+            <button class="btn btn--primary" type="submit">Send request</button>
+            <a class="btn btn--ghost" id="whatsBtn" target="_blank" rel="noopener"
+               href="https://wa.me/15142447729?text=Hi%20POSTRPRO%2C%20I%27d%20like%20a%20quote%20for%20an%20LED%20poster%20rental.">Send via WhatsApp</a>
+          </div>
+
+          <p class="tiny muted">
+            Note: GitHub Pages is static. This form uses a free email relay (FormSubmit).
+            If you prefer, we can switch it to Google Forms or a CRM later.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div class="footer__left">
+        <div class="brand brand--small"><span class="brand__mark">POSTR</span><span class="brand__pro">PRO</span></div>
+        <div class="tiny muted">Premium LED poster display rentals — Toronto & Montreal</div>
+      </div>
+      <div class="footer__right tiny muted">
+        <span>© <span id="year"></span> POSTRPRO</span>
+        <span class="sep">•</span>
+        <span>Events • Trade Shows • Promotions</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
