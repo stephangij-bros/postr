@@ -32,7 +32,7 @@
     const buildMsg = () => {
       const name = (form.querySelector('[name="name"]')?.value || "").trim();
       const email = (form.querySelector('[name="email"]')?.value || "").trim();
-      const company = (form.querySelector('[name="company"]')?.value || "").trim();
+      const location = (form.querySelector('[name="location"]')?.value || "").trim();
       const date = (form.querySelector('[name="date"]')?.value || "").trim();
       const message = (form.querySelector('[name="message"]')?.value || "").trim();
 
@@ -40,7 +40,7 @@
         "Hi POSTRPRO, I'd like a quote for an LED poster rental.",
         name ? `Name: ${name}` : "",
         email ? `Email: ${email}` : "",
-        company ? `Company/Booth: ${company}` : "",
+        location ? `Location: ${location}` : "",
         date ? `Event date: ${date}` : "",
         message ? `Details: ${message}` : ""
       ].filter(Boolean);
